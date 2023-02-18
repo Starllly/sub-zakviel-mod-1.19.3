@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sub-zakviel-mod",
+	"version": "${version}",
+	"name": "Sub Zakviel Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/GerdaMC/Sub-Zakviel-Mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sub-zakviel-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fun.starly.main.ZakMod"
+		],
+		"client": [
+			"fun.starly.main.ZakModClient"
+		],
+		"fabric-datagen": [
+			"fun.starly.main.ZakModDataGenerator"
+		]
+	},
+	"mixins": [
+		"sub-zakviel-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
